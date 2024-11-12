@@ -25,12 +25,10 @@ public class CitaController {
     private FichaService fichaService;
     @Autowired
     private PacienteService pacienteService;
-
     @GetMapping
     public List<Cita> findAll() {
         return citaService.findAll();
     }
-
     @GetMapping("/paciente/{id}")
     public List<Cita> findAllByPacienteId(@PathVariable long id) {
         return citaService.findAllByPacienteId(id);
