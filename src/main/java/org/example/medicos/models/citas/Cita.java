@@ -7,6 +7,7 @@ import org.example.medicos.models.fichas.Ficha;
 import org.example.medicos.models.horarios.Horario;
 import org.example.medicos.models.pacientes.Paciente;
 
+
 @Table(name = "citas")
 @Entity
 public class Cita {
